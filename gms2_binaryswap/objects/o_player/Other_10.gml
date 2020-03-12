@@ -20,12 +20,15 @@ if(mouse_right && canRadius) {
 		var target = o_block // init target to o_block
 		
 		// check mouse_left collision with specific target(s)
-		if(collision_point(mouse_x, mouse_y, o_enemy, true, false) 
-		&& collision_circle(x, y, 300, o_enemy, false, true)) {
+		if(collision_point(mouse_x, mouse_y, o_enemy, true, false)) {
 			target = o_enemy // change target to specified
-			canSwap = true
+		} else if(collision_point(mouse_x, mouse_y, o_object, true, false)) {
+			target = o_object // change target to specified
 		}
-		else {
+		
+		if(collision_circle(x, y, 300, target, false, true)) {
+			canSwap = true
+		} else {
 			canSwap = false
 		}
 		
