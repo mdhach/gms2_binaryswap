@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "b1e461f8-4634-4185-b8d2-be6662c2299d",
+            "Value": {
+                "id": "c299506e-d085-4ca2-9a3e-d02dfdc431bb",
+                "resourcePath": "scripts\\enemy_block_collision\\enemy_block_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b3fd4760-d362-4f22-a9cc-aacd254de8fd",
             "Value": {
                 "id": "34e4629f-1ad2-4865-9bd0-c9d0bd6a1fcb",
@@ -256,7 +264,8 @@
         }
     ],
     "script_order": [
-        "6f5d7e94-bd73-4a96-9b27-da9e01388939"
+        "6f5d7e94-bd73-4a96-9b27-da9e01388939",
+        "b1e461f8-4634-4185-b8d2-be6662c2299d"
     ],
     "tutorial": ""
 }

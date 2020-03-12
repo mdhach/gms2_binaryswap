@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "o_enemy",
     "eventList": [
-        
+        {
+            "id": "d8338220-680f-4231-a39f-326f9d9a6a11",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "46dc3889-62e6-45fa-83ea-17f97bab4587"
+        },
+        {
+            "id": "b3f9da8d-cad1-449c-8370-ddf7abd246ea",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "46dc3889-62e6-45fa-83ea-17f97bab4587"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
