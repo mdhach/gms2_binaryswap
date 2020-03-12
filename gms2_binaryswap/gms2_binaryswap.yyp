@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "02c8b2e4-5a8f-4030-8b52-6cfdaa4060cc",
+            "Value": {
+                "id": "c9deff49-e2ef-4e01-8b6a-78eea5deffb6",
+                "resourcePath": "objects\\o_item\\o_item.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04b8e52b-55f6-49f9-86c6-6f85b82ac638",
             "Value": {
                 "id": "cc846e34-320b-4fe8-af4d-46f1a504e23a",
                 "resourcePath": "views\\04b8e52b-55f6-49f9-86c6-6f85b82ac638.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "071cc792-d2b1-4a2f-8a84-048f96e00d12",
+            "Value": {
+                "id": "25351349-ada3-4204-bce3-9cc4680c39db",
+                "resourcePath": "sprites\\s_item\\s_item.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -76,6 +92,14 @@
                 "id": "448b7c89-130a-4776-9e8d-0a078a074dec",
                 "resourcePath": "views\\2254b937-b597-4f3b-963d-efd6530a0c88.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3a4be4e5-ef3b-4667-9c0e-aec07a0dc2c6",
+            "Value": {
+                "id": "e58fc8bd-bfb3-4100-9923-4a43317bd381",
+                "resourcePath": "scripts\\object_collision\\object_collision.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -199,6 +223,14 @@
             }
         },
         {
+            "Key": "ba69187e-2989-4d43-9882-7e1c1654ce90",
+            "Value": {
+                "id": "fca2e618-46eb-48f3-94f5-e4d5a5ac4bce",
+                "resourcePath": "sprites\\s_object\\s_object.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ba791394-e79e-40f0-ba19-1ae539d701a6",
             "Value": {
                 "id": "e530d11f-f9d0-4584-bb75-6244679a687d",
@@ -212,6 +244,14 @@
                 "id": "2c05e4ad-c130-4b5b-a30c-3e71b062bbe1",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cff3cfbe-4325-43e8-ad75-fc817aa1d832",
+            "Value": {
+                "id": "7afa6fab-8d04-45eb-8a6a-afe0fb168719",
+                "resourcePath": "objects\\o_object\\o_object.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -265,7 +305,8 @@
     ],
     "script_order": [
         "6f5d7e94-bd73-4a96-9b27-da9e01388939",
-        "b1e461f8-4634-4185-b8d2-be6662c2299d"
+        "b1e461f8-4634-4185-b8d2-be6662c2299d",
+        "3a4be4e5-ef3b-4667-9c0e-aec07a0dc2c6"
     ],
     "tutorial": ""
 }

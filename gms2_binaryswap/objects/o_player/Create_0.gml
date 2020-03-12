@@ -6,6 +6,7 @@ jumpHeight = 25
 canSwap = false
 canRadius = true
 radiusCD = 180
+pushspd = 0.3
 
 enum player {
 	move,
