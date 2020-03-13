@@ -5,9 +5,9 @@ with(other) {
 		canFlash = true
 		hp -= other.damage
 		if(other.x > x)
-			hspd -= 25
+			hspd -= 15
 		else
-			hspd += 25
+			hspd += 15
 		vspd -= 10
 	}
 }

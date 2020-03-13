@@ -1,3 +1,4 @@
+event_inherited()
 draw_self()
 // draw flash
 if(canFlash) {

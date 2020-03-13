@@ -5,7 +5,7 @@ grav = 4
 hp = 10
 canFire = true
 canFlash = false
-iFrames = 10
+iFrames = 30
 
 // states
 enum enemy {
