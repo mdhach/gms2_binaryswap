@@ -64,7 +64,7 @@ if(mouse_right && canRadius) {
 		global.time += 0.05
 	}
 	if(swapRadius < maxRadius) {
-		swapRadius += 5
+		swapRadius += restoreRate
 	}
 }
 
