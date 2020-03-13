@@ -18,7 +18,7 @@ if((place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) && key_ju
 if(mouse_right && canRadius) {
 	var list = ds_list_create() // create list to hold all objects
 	// get all swappable objects within radius
-	var inst = collision_circle_list(x, y, 300, o_swappable, false, true, list, false)
+	var inst = collision_circle_list(x, y, swapRadius, o_swappable, false, true, list, false)
 	
 	// set withinRadius to true in all objects in list
 	if(inst > 0) {
