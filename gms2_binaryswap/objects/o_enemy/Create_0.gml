@@ -6,6 +6,7 @@ hp = 10
 canFire = true
 canFlash = false
 iFrames = 30
+aggroDist = 300 // aggro distance
 
 // states
 enum enemy {
