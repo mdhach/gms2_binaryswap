@@ -10,8 +10,10 @@ var move = key_right - key_left
 hspd = move * walkspd
 
 // jump logic
-if((place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) && key_jump) {
+jumpBuffer -= 1
+if(jumpBuffer > 0 && key_jump) {
 	vspd -= jumpHeight
+	jumpBuffer = 0
 }
 
 // swap logic
@@ -25,10 +27,11 @@ if(mouse_right && canRadius) {
 		canRadius = false
 	}
 	var list = ds_list_create() // create list to hold all objects
+	
 	// get all swappable objects within radius
 	var inst = collision_circle_list(x, y, swapRadius, o_swappable, false, true, list, false)
 	
-	// set withinRadius to true in all objects in list
+	// set withinRadius to true for all objects in list
 	if(inst > 0) {
 		for(var i=0; i<inst; ++i) {
 			list[| i].withinRadius = true
@@ -39,7 +42,7 @@ if(mouse_right && canRadius) {
 		 // checks for any object at the mouse pointer
 		var target = instance_position( mouse_x, mouse_y, all )
 		
-		// check of target has the 'canSwap' variable set to true
+		// check of target has the 'withinRadius' variable set to true
 		if(variable_instance_get(target, "withinRadius")) {
 			var tempx = x
 			var tempy = y
@@ -53,7 +56,6 @@ if(mouse_right && canRadius) {
 		}
 	}
 } else {
-	canSwap = false
 	if(!canRadius && alarm[0] < 0) alarm[0] = radiusCD
 }
 
@@ -61,3 +63,5 @@ if(mouse_right && canRadius) {
 if(!mouse_right) {
 	swapRadius = maxRadius
 }
+
+if(place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) jumpBuffer = maxJumpBuffer
