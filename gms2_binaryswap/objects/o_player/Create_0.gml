@@ -12,9 +12,10 @@ shrinkRate = 2 // rate at which radius shrinks
 canRadius = true // can check radius for swapping
 radiusCD = 180 // cooldown for swapping
 pushspd = 0.3 // speed for pushing objects
-canFlash = true // flash boolean
-maxHp = 30
-hp = maxHp
+canFlash = false // flash boolean
+maxHp = 30 // maximum health points
+hp = maxHp // current health points
+invTime = 15 // iframes
 
 // states
 enum player {

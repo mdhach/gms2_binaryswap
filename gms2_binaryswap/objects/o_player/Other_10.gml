@@ -20,7 +20,7 @@ if(jumpBuffer > 0 && key_jump) {
 
 // swap logic
 if(mouse_right && canRadius) {
-	global.time = .1
+	global.time = .3
 	// shrink swap radius
 	if(swapRadius > 0) {
 		swapRadius -= shrinkRate

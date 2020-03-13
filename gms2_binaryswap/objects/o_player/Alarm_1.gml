@@ -1,2 +1,2 @@
 /// @description flash
-canFlash = true
+if(state == player.hurt) canFlash = true

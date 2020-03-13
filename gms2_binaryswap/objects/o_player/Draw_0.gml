@@ -10,7 +10,7 @@ if(mouse_right && canRadius) {
 }
 
 // draw flash
-if(!canRadius && canFlash) {
+if(canFlash) {
 	shader_set(shd_flash)
 	draw_self()
 	shader_reset()
