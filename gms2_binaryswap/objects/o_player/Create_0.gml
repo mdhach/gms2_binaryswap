@@ -13,6 +13,8 @@ canRadius = true // can check radius for swapping
 radiusCD = 180 // cooldown for swapping
 pushspd = 0.3 // speed for pushing objects
 canFlash = true // flash boolean
+maxHp = 30
+hp = maxHp
 
 // states
 enum player {

@@ -13,14 +13,14 @@ hspd = move * walkspd
 jumpBuffer -= 1
 if(jumpBuffer > 0 && key_jump) {
 	if(mouse_right && canRadius) 
-		jump = jumpHeight + (jumpHeight * (global.time-0.1))
+		jump = jumpHeight + (jumpHeight * (1-global.time))
 	else jump = jumpHeight
 	jumpBuffer = 0
 } else jump = 0
 
 // swap logic
 if(mouse_right && canRadius) {
-	global.time = .5
+	global.time = .1
 	// shrink swap radius
 	if(swapRadius > 0) {
 		swapRadius -= shrinkRate

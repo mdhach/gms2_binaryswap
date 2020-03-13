@@ -1,0 +1,2 @@
+/// @description canFire
+canFire = true

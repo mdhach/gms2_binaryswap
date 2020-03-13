@@ -4,10 +4,12 @@ if(vspd > 0) {
 		with(other) {
 			hp -= other.fallDamage * other.vspd
 			if(x < other.x) {
-				hspd -= 15
+				hspd -= 7
 			} else {
-				hspd += 15
+				hspd += 7
 			}
+			state = enemy.hurt
+			canFlash = true
 		}
 	}
 }
