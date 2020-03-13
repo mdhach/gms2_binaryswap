@@ -10,6 +10,7 @@ canSwap = false // allows player to swap
 canRadius = true // can check radius for swapping
 radiusCD = 180 // cooldown for swapping
 pushspd = 0.3 // speed for pushing objects
+canFlash = true // flash boolean
 
 // states
 enum player {

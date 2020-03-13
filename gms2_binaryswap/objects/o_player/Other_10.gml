@@ -20,6 +20,7 @@ if(mouse_right && canRadius) {
 	if(swapRadius > 0) {
 		swapRadius -= shrinkRate
 	}
+	// CD if radius goes to 0
 	if(swapRadius == 0) {
 		canRadius = false
 	}
@@ -53,9 +54,10 @@ if(mouse_right && canRadius) {
 	}
 } else {
 	canSwap = false
-	if(alarm[0] < 0) alarm[0] = radiusCD
+	if(!canRadius && alarm[0] < 0) alarm[0] = radiusCD
 }
 
+// reset swapRadius
 if(!mouse_right) {
 	swapRadius = maxRadius
 }

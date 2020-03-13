@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "22ad4964-203d-488a-adb8-61a07a16c744",
+            "Value": {
+                "id": "1e1a9ec0-1431-4468-ba28-7fa9cd5983fe",
+                "resourcePath": "shaders\\shd_radius_cd\\shd_radius_cd.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "3a4be4e5-ef3b-4667-9c0e-aec07a0dc2c6",
             "Value": {
                 "id": "e58fc8bd-bfb3-4100-9923-4a43317bd381",

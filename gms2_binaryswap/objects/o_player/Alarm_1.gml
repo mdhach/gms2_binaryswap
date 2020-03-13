@@ -1,0 +1,2 @@
+/// @description flash
+canFlash = true
