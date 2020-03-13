@@ -4,22 +4,27 @@
 
 
 
-var obj = argument0
-var hcheck = (!check_hcollision(obj, o_block) && !check_hcollision(obj, o_enemy))
+var obj1 = argument0
+var obj2 = argument1
+var hcheck = (!check_hcollision(obj2, o_block) && !check_hcollision(obj2, o_enemy))
 
 // horizontal collision check
-if(place_meeting(x+hspd, y, obj)) { // check collision
-	if(hcheck) { // if no horizontal collision, push object
-		x += hspd * pushspd
-		obj.x += hspd * pushspd
+with(obj1) {
+	if(place_meeting(x+hspd, y, obj2)) { // check collision
+		if(hcheck && obj2.moveable) { // if no horizontal collision, push object
+			x += hspd * pushspd
+			obj2.x += hspd * pushspd
+		}
+		hspd = 0
 	}
-	hspd = 0
 }
 
 // vertical collision check
-if(place_meeting(x, y+vspd, obj)) {
-	while(!place_meeting(x, y+sign(vspd), obj)) {
-		y += sign(vspd)
+with(obj1) {
+	if(place_meeting(x, y+vspd, obj2)) {
+		while(!place_meeting(x, y+sign(vspd), obj2)) {
+			y += sign(vspd)
+		}
+		vspd = 0
 	}
-	vspd = 0
 }

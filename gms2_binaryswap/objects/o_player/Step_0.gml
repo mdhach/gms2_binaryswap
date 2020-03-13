@@ -4,7 +4,10 @@ event_user(state)
 vspd += grav
 
 block_collision(o_block)
-object_collision(o_object)
+with(o_object) {
+	object_collision(other, id)
+}
+
 
 // apply hspd and vspd to x and y
 x += hspd
