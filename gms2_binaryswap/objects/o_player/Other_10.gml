@@ -12,12 +12,15 @@ hspd = move * walkspd
 // jump logic
 jumpBuffer -= 1
 if(jumpBuffer > 0 && key_jump) {
-	vspd -= jumpHeight
+	if(mouse_right && canRadius) 
+		jump = jumpHeight + (jumpHeight * (global.time-0.1))
+	else jump = jumpHeight
 	jumpBuffer = 0
-}
+} else jump = 0
 
 // swap logic
 if(mouse_right && canRadius) {
+	global.time = .5
 	// shrink swap radius
 	if(swapRadius > 0) {
 		swapRadius -= shrinkRate
@@ -57,11 +60,13 @@ if(mouse_right && canRadius) {
 	}
 } else {
 	if(!canRadius && alarm[0] < 0) alarm[0] = radiusCD
+	if(global.time < 1) {
+		global.time += 0.05
+	}
+	if(swapRadius < maxRadius) {
+		swapRadius += 5
+	}
 }
 
-// reset swapRadius
-if(!mouse_right) {
-	swapRadius = maxRadius
-}
-
-if(place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) jumpBuffer = maxJumpBuffer
+// vertical collision check for jumping
+if(check_vcollision(self, o_block) || check_vcollision(self, o_object)) jumpBuffer = maxJumpBuffer

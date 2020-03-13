@@ -1,3 +1,5 @@
+event_user(state)
+
 vspd += grav
 
 block_collision(o_block)

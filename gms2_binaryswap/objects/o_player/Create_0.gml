@@ -2,6 +2,7 @@ vspd = 0 // vertical speed
 hspd = 0 // height speed
 walkspd = 4 // walking speed
 grav = 1 // gravity
+jump = 0
 jumpHeight = 20 // height of jump
 jumpBuffer = 0 // jump buffer
 maxJumpBuffer = 10 // max jump buffer

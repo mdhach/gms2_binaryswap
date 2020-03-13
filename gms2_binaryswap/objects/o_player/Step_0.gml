@@ -1,7 +1,7 @@
 event_user(state)
 
 // apply gravity to vspd
-vspd += grav
+vspd += grav - jump
 
 block_collision(o_block)
 with(o_object) {
@@ -10,5 +10,5 @@ with(o_object) {
 
 
 // apply hspd and vspd to x and y
-x += hspd
-y += vspd
+x += hspd * global.time
+y += vspd * global.time
