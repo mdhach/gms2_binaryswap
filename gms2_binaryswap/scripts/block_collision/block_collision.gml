@@ -7,7 +7,7 @@
 var obj = argument0
 
 // horizontal collision check
-if (place_meeting(x+hspd, y, obj)) { // check if obj1 and obj are colliding
+if (place_meeting(x+hspd, y, obj)) {
 	while(!place_meeting(x+sign(hspd), y, obj)) { // check if no collision
 		x += sign(hspd) // add 1 or -1
 	}
