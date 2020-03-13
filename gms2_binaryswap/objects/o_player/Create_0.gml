@@ -2,7 +2,7 @@ vspd = 0 // vertical speed
 hspd = 0 // height speed
 walkspd = 4 // walking speed
 grav = 1 // gravity
-jump = 0
+jump = 0 // applied to vspd & grav in step
 jumpHeight = 20 // height of jump
 jumpBuffer = 0 // jump buffer
 maxJumpBuffer = 10 // max jump buffer
@@ -15,7 +15,7 @@ pushspd = 0.3 // speed for pushing objects
 canFlash = false // flash boolean
 maxHp = 30 // maximum health points
 hp = maxHp // current health points
-invTime = 15 // iframes
+iFrames = 15 // iframes
 
 // states
 enum player {

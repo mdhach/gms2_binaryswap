@@ -10,7 +10,7 @@ with(o_object) {
 
 if(hp > maxHp) hp = maxHp
 
-if(hp < 0) instance_destroy()
+if(hp <= 0) instance_destroy()
 
 // apply hspd and vspd to x and y
 x += hspd * global.time
