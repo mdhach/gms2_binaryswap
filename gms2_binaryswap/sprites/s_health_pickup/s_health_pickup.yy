@@ -2,7 +2,7 @@
     "id": "071cc792-d2b1-4a2f-8a84-048f96e00d12",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_item",
+    "name": "s_health_pickup",
     "For3D": false,
     "HTile": false,
     "VTile": false,

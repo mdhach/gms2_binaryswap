@@ -7,5 +7,6 @@ with(other) {
 		hspd -= 15
 	else
 		hspd += 15
-	vspd -= 10
+	if(vspd >= 0)
+		vspd -= 10
 }
