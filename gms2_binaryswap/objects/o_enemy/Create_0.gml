@@ -7,6 +7,7 @@ canFire = true
 canFlash = false
 iFrames = 30
 aggroDist = 300 // aggro distance
+selfHurt = false // projectile can harm enemy
 
 // states
 enum enemy {

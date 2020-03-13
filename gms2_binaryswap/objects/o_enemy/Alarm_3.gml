@@ -1,0 +1,2 @@
+/// @description selfHurt
+selfHurt = true
