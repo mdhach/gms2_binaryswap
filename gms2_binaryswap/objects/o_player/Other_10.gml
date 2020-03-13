@@ -16,6 +16,13 @@ if((place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) && key_ju
 
 // swap logic
 if(mouse_right && canRadius) {
+	// shrink swap radius
+	if(swapRadius > 0) {
+		swapRadius -= shrinkRate
+	}
+	if(swapRadius == 0) {
+		canRadius = false
+	}
 	var list = ds_list_create() // create list to hold all objects
 	// get all swappable objects within radius
 	var inst = collision_circle_list(x, y, swapRadius, o_swappable, false, true, list, false)
@@ -47,4 +54,8 @@ if(mouse_right && canRadius) {
 } else {
 	canSwap = false
 	if(alarm[0] < 0) alarm[0] = radiusCD
+}
+
+if(!mouse_right) {
+	swapRadius = maxRadius
 }
