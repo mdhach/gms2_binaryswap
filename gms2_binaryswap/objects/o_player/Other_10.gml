@@ -16,22 +16,32 @@ if((place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) && key_ju
 
 // swap logic
 if(mouse_right && canRadius) {
-	var inst = collision_circle(x, y, 300, o_swappable, false, true); // checks to see if the target is within radius
-	if (inst) inst.canSwap = true
+	var list = ds_list_create() // create list to hold all objects
+	// get all swappable objects within radius
+	var inst = collision_circle_list(x, y, 300, o_swappable, false, true, list, false)
+	
+	// set withinRadius to true in all objects in list
+	if(inst > 0) {
+		for(var i=0; i<inst; ++i) {
+			list[| i].withinRadius = true
+		}
+	}
 	
 	if(mouse_left) {
-		var target = instance_position( mouse_x, mouse_y, all ); // checks for any object at the mouse pointer
-
+		 // checks for any object at the mouse pointer
+		var target = instance_position( mouse_x, mouse_y, all )
+		
 		// check of target has the 'canSwap' variable set to true
-		if(variable_instance_get(target, "canSwap")) {
+		if(variable_instance_get(target, "withinRadius")) {
 			var tempx = x
 			var tempy = y
 			x = target.x
 			y = target.y-10
 			target.x = tempx
 			target.y = tempy-10
-			target.canSwap = false
+			target.withinRadius = false
 			canRadius = false
+			ds_list_destroy(list) // destroy list
 		}
 	}
 } else {

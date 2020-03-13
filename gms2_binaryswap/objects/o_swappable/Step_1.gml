@@ -1,1 +1,1 @@
-canSwap = false
+withinRadius = false

@@ -1,1 +1,1 @@
-canSwap = false
+withinRadius = false // checks if object is within radius of swapping

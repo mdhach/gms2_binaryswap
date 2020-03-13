@@ -3,10 +3,10 @@ hspd = 0
 walkspd = 4
 grav = 1
 jumpHeight = 25
-canSwap = false
-canRadius = true
-radiusCD = 180
-pushspd = 0.3
+canSwap = false // allows player to swap
+canRadius = true // can check radius for swapping
+radiusCD = 180 // cooldown for swapping
+pushspd = 0.3 // speed for pushing objects
 
 enum player {
 	move,
