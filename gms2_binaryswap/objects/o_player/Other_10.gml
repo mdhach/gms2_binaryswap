@@ -10,36 +10,27 @@ var move = key_right - key_left
 hspd = move * walkspd
 
 // jump logic
-if((place_meeting(x, y+1, o_block)) && key_jump) {
+if((place_meeting(x, y+1, o_block) || place_meeting(x, y+1, o_object)) && key_jump) {
 	vspd -= jumpHeight
 }
 
 // swap logic
 if(mouse_right && canRadius) {
+	var inst = collision_circle(x, y, 300, o_swappable, false, true); // checks to see if the target is within radius
+	if (inst) inst.canSwap = true
+	
 	if(mouse_left) {
-		var target = o_block // init target to o_block
-		
-		// check mouse_left collision with specific target(s)
-		if(collision_point(mouse_x, mouse_y, o_enemy, true, false)) {
-			target = o_enemy // change target to specified
-		} else if(collision_point(mouse_x, mouse_y, o_object, true, false)) {
-			target = o_object // change target to specified
-		}
-		
-		if(collision_circle(x, y, 300, target, false, true)) {
-			canSwap = true
-		} else {
-			canSwap = false
-		}
-		
-		// swap with target logic
-		if((target != o_block) && canSwap) {
+		var target = instance_position( mouse_x, mouse_y, all ); // checks for any object at the mouse pointer
+
+		// check of target has the 'canSwap' variable set to true
+		if(variable_instance_get(target, "canSwap")) {
 			var tempx = x
 			var tempy = y
 			x = target.x
 			y = target.y-10
 			target.x = tempx
 			target.y = tempy-10
+			target.canSwap = false
 			canRadius = false
 		}
 	}

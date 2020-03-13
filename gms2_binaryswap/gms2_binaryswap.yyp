@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "141a0631-efa4-4bd9-be3a-6c8001af7375",
+            "Value": {
+                "id": "dcf1c4dd-c0a7-42ae-99e4-c29cc185d152",
+                "resourcePath": "objects\\o_swappable\\o_swappable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "170fb1a7-483a-47c8-b81f-d4c1a9a98ae7",
             "Value": {
                 "id": "ce2518cf-32d6-4166-90e9-9db932dde3b0",
