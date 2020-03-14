@@ -69,4 +69,5 @@ if(mouse_right && canRadius) {
 }
 
 // vertical collision check for jumping
-if(check_vcollision(self, o_block) || check_vcollision(self, o_object)) jumpBuffer = maxJumpBuffer
+if(check_vcollision(self, o_block) || check_vcollision(self, o_object) || check_vcollision(self, o_interactable)) 
+	jumpBuffer = maxJumpBuffer

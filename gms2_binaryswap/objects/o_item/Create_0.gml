@@ -4,7 +4,7 @@ shrinkRate = 0
 restoreRate = 0
 radiusCD = 0
 
-// item attributes
+// item states
 enum item {
 	nothing, // does nothing
 	restore, // restore hp

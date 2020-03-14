@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "15285b2b-0dd9-4794-8406-7612aaf4c735",
+            "Value": {
+                "id": "2147d0dc-d21b-4235-85f7-ac6fa84939ad",
+                "resourcePath": "views\\15285b2b-0dd9-4794-8406-7612aaf4c735.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "170fb1a7-483a-47c8-b81f-d4c1a9a98ae7",
             "Value": {
                 "id": "ce2518cf-32d6-4166-90e9-9db932dde3b0",
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "75606efd-1373-4ecc-9d3f-83ea2197333a",
+            "Value": {
+                "id": "4e8e4302-1518-42a8-9ec6-b0de68f48f29",
+                "resourcePath": "objects\\o_pressure\\o_pressure.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80cc22b4-2b88-4e9e-a56c-9b1fa05bb9ce",
             "Value": {
                 "id": "135e9b1e-61f8-47d9-a8ca-637e6cbe64dd",
@@ -267,6 +283,14 @@
             "Value": {
                 "id": "652f387c-75f8-4b93-aa14-8f16a33a9117",
                 "resourcePath": "views\\88ee3376-d902-4c72-9adc-68f9a3e44ac8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8c15febb-1dde-414f-9c83-c569a75a2553",
+            "Value": {
+                "id": "447ffaa3-0c5c-4400-809c-7662586f23ec",
+                "resourcePath": "views\\8c15febb-1dde-414f-9c83-c569a75a2553.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -319,6 +343,14 @@
             }
         },
         {
+            "Key": "a43c90b5-8e7c-49b1-a2d8-eb45efb7fd96",
+            "Value": {
+                "id": "ac8a0ab7-0b6c-4f7e-a33d-025e0ecbbb80",
+                "resourcePath": "objects\\o_interactable\\o_interactable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "faef9cc7-5fd0-4c27-98b2-c697b35c4c04",
@@ -340,6 +372,14 @@
                 "id": "c299506e-d085-4ca2-9a3e-d02dfdc431bb",
                 "resourcePath": "scripts\\enemy_block_collision\\enemy_block_collision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b3256182-7080-4026-8385-9e0c970b486b",
+            "Value": {
+                "id": "0089c22c-fe4e-4e93-ba3f-5e24167a36d6",
+                "resourcePath": "sprites\\s_pressure\\s_pressure.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
