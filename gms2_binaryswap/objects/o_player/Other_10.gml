@@ -9,7 +9,7 @@ mouse_right = mouse_check_button(mb_right)
 var move = key_right - key_left
 hspd = move * walkspd
 
-// jump logic
+#region JUMP LOGIC
 jumpBuffer -= 1
 if(jumpBuffer > 0 && key_jump) {
 	if(mouse_right && canRadius) 
@@ -17,8 +17,9 @@ if(jumpBuffer > 0 && key_jump) {
 	else jump = jumpHeight
 	jumpBuffer = 0
 } else jump = 0
+#endregion
 
-// swap logic
+#region SWAP LOGIC
 if(mouse_right && canRadius) {
 	global.time = .3
 	// shrink swap radius
@@ -26,8 +27,9 @@ if(mouse_right && canRadius) {
 		swapRadius -= shrinkRate
 	}
 	// CD if radius goes to 0
-	if(swapRadius == 0) {
+	if(swapRadius <= 0) {
 		canRadius = false
+		if(alarm[0] < 0) alarm[0] = (radiusCD - swapCD) // less CD if triggered by swapRadius
 	}
 	var list = ds_list_create() // create list to hold all objects
 	
@@ -41,7 +43,7 @@ if(mouse_right && canRadius) {
 		}
 	}
 	ds_list_destroy(list) // destroy list
-	
+
 	if(mouse_left) {
 		 // checks for any object at the mouse pointer
 		var target = collision_circle(mouse_x, mouse_y, 50, o_swappable, false, true)
@@ -67,7 +69,10 @@ if(mouse_right && canRadius) {
 		swapRadius += restoreRate
 	}
 }
+#endregion
 
+#region V CHECK
 // vertical collision check for jumping
 if(check_vcollision(self, o_block) || check_vcollision(self, o_object) || check_vcollision(self, o_interactable)) 
 	jumpBuffer = maxJumpBuffer
+#endregion

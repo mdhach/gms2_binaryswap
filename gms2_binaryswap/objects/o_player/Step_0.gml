@@ -1,5 +1,8 @@
 event_user(state)
 
+if(canRadius) sprite_index = s_player_g
+else sprite_index = s_player_r
+
 // apply gravity to vspd
 vspd += grav - jump
 
@@ -13,8 +16,14 @@ if(hp > maxHp) hp = maxHp
 
 if(hp <= 0) instance_destroy()
 
+// apply global time to speeds
+hspd *= global.time
+vspd *= global.time
+
+// clamp to prevent super speed
+hspd = clamp(hspd, -50, 50)
 vspd = clamp(vspd, -50, 50)
 
 // apply hspd and vspd to x and y
-x += hspd * global.time
-y += vspd * global.time
+x += hspd
+y += vspd

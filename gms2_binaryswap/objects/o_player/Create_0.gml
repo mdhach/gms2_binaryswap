@@ -12,6 +12,7 @@ shrinkRate = 8 // rate at which radius shrinks
 restoreRate = 2 // rate at which radius restores to max
 canRadius = true // can check radius for swapping
 radiusCD = 180 // cooldown for swapping
+swapCD = 30
 pushspd = 0.3 // speed for pushing objects
 canFlash = false // flash boolean
 maxHp = 30 // maximum health points
