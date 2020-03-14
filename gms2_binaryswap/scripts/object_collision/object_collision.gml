@@ -6,7 +6,7 @@
 
 var obj1 = argument0
 var obj2 = argument1
-var hcheck = (!check_hcollision(obj2, o_block) && !check_hcollision(obj2, o_enemy) && !check_hcollision(obj2, o_object))
+var hcheck = (check_hcollision(obj2, o_block) && check_hcollision(obj2, o_enemy) && check_hcollision(obj2, o_object))
 
 // horizontal collision check
 with(obj1) {

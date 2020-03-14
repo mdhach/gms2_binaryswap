@@ -1,5 +1,24 @@
-#region Event: Destroy wall
-if(instance_exists(inst_17EF36FE))
-	if(inst_78C8EEF.activated)
-		instance_destroy(inst_17EF36FE)
+#region room0_Event 1: Move block
+if(e1_trigger_inst.activated) {
+	if(e1_block_inst.y > e1_target_y) e1_block_inst.y -= 5
+}
+else {
+	if(e1_block_inst.y < e1_block_inst_y) e1_block_inst.y += 5
+}
+#endregion
+
+#region room0_Event 2: Move block
+if(e2_trigger_inst.activated) {
+	if(e2_block_inst.y > e2_target_y) e2_block_inst.y -= 5
+}
+else {
+	if(e2_block_inst.y < e2_block_inst_y) e2_block_inst.y += 5
+}
+#endregion
+
+#region room0_Event 3: Backtrack
+if(e3_trigger_inst.activated) {
+	o_player.x = 3565
+	o_player.y = 250
+}
 #endregion

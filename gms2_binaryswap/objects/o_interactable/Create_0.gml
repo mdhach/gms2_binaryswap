@@ -1,4 +1,5 @@
 activated = false // if interactable is activated
+playerOnly = false
 
 enum interactable {
 	none,

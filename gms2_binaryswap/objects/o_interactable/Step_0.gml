@@ -1,6 +1,11 @@
 if(state == interactable.pressure) {
-	if(place_meeting(x, y-6, o_player) || place_meeting(x, y-6, o_object)) activated = true
-	else activated = false
+	if(playerOnly) {
+		if(place_meeting(x, y-6, o_player)) activated = true
+		else activated = false
+	} else {
+		if(place_meeting(x, y-6, o_player) || place_meeting(x, y-6, o_object)) activated = true
+		else activated = false
+	}
 }
 
 if(state == interactable.lever) {
