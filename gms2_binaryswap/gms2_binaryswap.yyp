@@ -47,11 +47,27 @@
             }
         },
         {
+            "Key": "03afe802-eb38-41d1-aaf9-ead57bf45986",
+            "Value": {
+                "id": "5d6096ac-feeb-45fb-98aa-34985043183f",
+                "resourcePath": "sprites\\s_lever_r\\s_lever_r.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "04b8e52b-55f6-49f9-86c6-6f85b82ac638",
             "Value": {
                 "id": "cc846e34-320b-4fe8-af4d-46f1a504e23a",
                 "resourcePath": "views\\04b8e52b-55f6-49f9-86c6-6f85b82ac638.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0564db19-affa-431e-aeee-096f47d1e317",
+            "Value": {
+                "id": "a0eddeff-7a84-403d-bf14-0d25aa19218f",
+                "resourcePath": "sprites\\s_pressure_d\\s_pressure_d.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -386,7 +402,7 @@
             "Key": "b3256182-7080-4026-8385-9e0c970b486b",
             "Value": {
                 "id": "0089c22c-fe4e-4e93-ba3f-5e24167a36d6",
-                "resourcePath": "sprites\\s_pressure\\s_pressure.yy",
+                "resourcePath": "sprites\\s_pressure_u\\s_pressure_u.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -396,6 +412,14 @@
                 "id": "34e4629f-1ad2-4865-9bd0-c9d0bd6a1fcb",
                 "resourcePath": "sprites\\s_enemy\\s_enemy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba19734b-2d15-4fa9-9f2a-49b93ad04e61",
+            "Value": {
+                "id": "98012c3f-9a92-4190-93ef-a163213023e1",
+                "resourcePath": "objects\\o_lever\\o_lever.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -468,6 +492,14 @@
                 "id": "1efc1e23-653f-4a80-a097-902a2611f69c",
                 "resourcePath": "views\\d359aad4-6cf4-47a3-b02c-b0a9186a6090.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d4e42d54-8e9c-454e-bdc2-ff5f66139949",
+            "Value": {
+                "id": "99860d36-0583-4bdb-bf96-2a14e15ccc22",
+                "resourcePath": "sprites\\s_lever_l\\s_lever_l.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
