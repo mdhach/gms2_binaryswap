@@ -8,4 +8,4 @@ else
 
 var pc = (hp / maxHp) * 100
 //draw_rectangle(25, 70, 85, 90, false) // radius ui
-draw_healthbar(24, 25, 86, 46, pc, c_black, c_red, c_lime, 0, true, true)
+draw_healthbar(25, 25, 120, 70, pc, c_black, c_red, c_lime, 0, true, true)
