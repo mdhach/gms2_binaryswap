@@ -15,3 +15,17 @@ e2_target_y = e2_block_inst_y - 200 // target value
 #region Event 3 Variables
 e3_trigger_inst = inst_5C952D1F
 #endregion
+
+#region Event 4 Variables
+e4_trigger_inst = inst_6D6A28F6
+
+// block 1
+e4_block1_inst = inst_78062759
+e4_block1_target_yscale = 2
+e4_block1_target_y = 640
+
+// block 2
+e4_block2_inst = inst_5D8D88EC
+e4_block2_target_yscale = 3.75
+e4_block2_target_y = 584
+#endregion

@@ -20,3 +20,18 @@ if(e3_trigger_inst.activated) {
 	o_player.y = 250
 }
 #endregion
+
+#region room0_Event 4: Open Level
+if(e4_trigger_inst.activated) {
+	// block 1
+	if(e4_block1_inst.image_yscale > e4_block1_target_yscale)
+		e4_block1_inst.image_yscale -= 0.1
+	if(e4_block1_inst.y < e4_block1_target_y)
+		e4_block1_inst.y += 5
+	// block 2
+	if(e4_block2_inst.image_yscale > e4_block2_target_yscale)
+		e4_block2_inst.image_yscale -= 0.1
+	if(e4_block2_inst.y < e4_block2_target_y)
+		e4_block2_inst.y += 5
+}
+#endregion
