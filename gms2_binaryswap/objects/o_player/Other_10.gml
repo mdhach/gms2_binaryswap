@@ -48,10 +48,10 @@ if(mouse_right && canRadius) {
 
 	if(mouse_left) {
 		 // checks for any object at the mouse pointer
-		var target = collision_circle(mouse_x, mouse_y, 50, o_swappable, false, true)
+		var target = collision_point(mouse_x, mouse_y, o_swappable, false, true)
 
 		// check of target has the 'withinRadius' variable set to true
-		if(variable_instance_get(target, "withinRadius")) {
+		if(variable_instance_get(target, "withinRadius") && variable_instance_get(target, "canSwap")) {
 			if(!place_meeting(target.x, target.y-12, o_block)
 			&& !place_meeting(x, y-12, o_block)) { // check bad swap / upper collision
 				var tempx = x
