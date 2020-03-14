@@ -1,2 +1,2 @@
 withinRadius = false // checks if object is within radius of swapping
-canSwap = true
+canSwap = true // if child can swap

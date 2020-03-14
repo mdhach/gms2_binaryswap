@@ -1,3 +1,4 @@
+event_inherited()
 hp = 0
 maxRadius = 0
 shrinkRate = 0

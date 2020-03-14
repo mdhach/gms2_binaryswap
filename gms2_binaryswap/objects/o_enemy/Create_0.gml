@@ -11,8 +11,9 @@ aggroDist = 500 // aggro distance
 selfHurt = false // projectile can harm enemy
 safeFrames = 30 // time until enemy can self hurt
 canMove = true // enemy can move
-moveCD = 120
-moveDuration = 30
+moveCD = 120 // time until enemy can move
+moveDuration = 30 // duration of movement
+ff = true // friendly fire & self fire
 
 // states
 enum enemy {

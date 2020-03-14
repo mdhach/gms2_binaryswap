@@ -23,17 +23,19 @@ if(jumpBuffer > 0 && key_jump) {
 
 #region SWAP LOGIC
 if(mouse_right && canRadius) {
-	global.time = .3
+	global.time = .3 // slow time
+	
 	// shrink swap radius
 	if(swapRadius > 0) {
 		swapRadius -= shrinkRate
 	}
-	// CD if radius goes to 0
+	
+	// set cooldown if radius goes to 0
 	if(swapRadius <= 0) {
 		canRadius = false
 		if(alarm[0] < 0) alarm[0] = (radiusCD - swapCD) // less CD if triggered by swapRadius
 	}
-	var list = ds_list_create() // create list to hold all objects
+	var list = ds_list_create() // declare list to hold objects
 	
 	// get all swappable objects within radius
 	var inst = collision_circle_list(x, y, swapRadius, o_swappable, false, true, list, false)
@@ -52,8 +54,9 @@ if(mouse_right && canRadius) {
 
 		// check of target has the 'withinRadius' variable set to true
 		if(variable_instance_get(target, "withinRadius") && variable_instance_get(target, "canSwap")) {
-			if(!place_meeting(target.x, target.y-12, o_block)
-			&& !place_meeting(x, y-12, o_block)) { // check bad swap / upper collision
+			// check bad swap / upper collision
+			if(collision_point(target.x, target.y-target.sprite_height, all, false, true) < 0
+			&& collision_point(x, y-sprite_height, all, false, true) < 0) {
 				var tempx = x
 				var tempy = y
 				x = target.x
@@ -63,8 +66,9 @@ if(mouse_right && canRadius) {
 				target.withinRadius = false
 				canRadius = false
 			} else {
+				// cd if bad swap
 				canRadius = false
-				if(alarm[0] < 0) alarm[0] = badSwapCD // lenient cd for bad swap
+				if(alarm[0] < 0) alarm[0] = badSwapCD // lenient cd for bad swap	
 			}
 		}
 	}
@@ -81,6 +85,6 @@ if(mouse_right && canRadius) {
 
 #region V CHECK
 // vertical collision check for jumping
-if(check_vcollision(self, o_block) || check_vcollision(self, o_object) || check_vcollision(self, o_interactable)) 
+if(check_vcollision(self, o_block) || check_vcollision(self, o_object) || check_vcollision(self, o_interactable))
 	jumpBuffer = maxJumpBuffer
 #endregion

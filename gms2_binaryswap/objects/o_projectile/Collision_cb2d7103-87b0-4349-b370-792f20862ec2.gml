@@ -1,5 +1,5 @@
 with(other) {
-	if(selfHurt) {
+	if(selfHurt && ff) {
 		instance_destroy(other)
 		state = enemy.hurt
 		canFlash = true

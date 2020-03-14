@@ -12,8 +12,8 @@ var hcheck = (check_hcollision(obj2, o_block) && check_hcollision(obj2, o_enemy)
 with(obj1) {
 	if(place_meeting(x+hspd, y, obj2)) {
 		if(hcheck && obj2.moveable) { // if no horizontal collision && moveable, push object
-			x += hspd * pushspd
-			obj2.x += hspd * pushspd
+			x += hspd * pushspd * global.time
+			obj2.x += hspd * pushspd * global.time
 		}
 		hspd = 0
 	}

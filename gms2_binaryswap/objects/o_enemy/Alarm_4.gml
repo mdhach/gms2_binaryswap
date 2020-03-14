@@ -1,2 +1,2 @@
-/// @description canMove
+/// @description moveCD
 canMove = true
