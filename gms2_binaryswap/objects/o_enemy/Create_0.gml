@@ -8,6 +8,10 @@ canFlash = false
 iFrames = 30
 aggroDist = 300 // aggro distance
 selfHurt = false // projectile can harm enemy
+safeFrames = 30 // time until enemy can self hurt
+canMove = true // enemy can move
+moveCD = 120
+moveDuration = 30
 
 // states
 enum enemy {

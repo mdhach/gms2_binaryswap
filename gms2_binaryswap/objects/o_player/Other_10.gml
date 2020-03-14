@@ -40,10 +40,11 @@ if(mouse_right && canRadius) {
 			list[| i].withinRadius = true
 		}
 	}
+	ds_list_destroy(list) // destroy list
 	
 	if(mouse_left) {
 		 // checks for any object at the mouse pointer
-		var target = instance_position( mouse_x, mouse_y, all )
+		var target = collision_circle(mouse_x, mouse_y, 50, o_swappable, false, true)
 		
 		// check of target has the 'withinRadius' variable set to true
 		if(variable_instance_get(target, "withinRadius")) {
@@ -55,7 +56,6 @@ if(mouse_right && canRadius) {
 			target.y = tempy-10
 			target.withinRadius = false
 			canRadius = false
-			ds_list_destroy(list) // destroy list
 		}
 	}
 } else {

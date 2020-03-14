@@ -17,4 +17,3 @@ vspd = clamp(vspd, -50, 50)
 // apply hspd and vspd to x and y
 x += hspd * global.time
 y += vspd * global.time
-show_debug_message(vspd * global.time)
