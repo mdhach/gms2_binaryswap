@@ -1,3 +1,4 @@
+#region CONTROLS
 /// @description move state
 key_left = keyboard_check(ord("A"))
 key_right = keyboard_check(ord("D"))
@@ -8,6 +9,7 @@ mouse_right = mouse_check_button(mb_right)
 // get move integer and apply walkspd
 var move = key_right - key_left
 hspd = move * walkspd
+#endregion
 
 #region JUMP LOGIC
 jumpBuffer -= 1
@@ -50,14 +52,19 @@ if(mouse_right && canRadius) {
 		
 		// check of target has the 'withinRadius' variable set to true
 		if(variable_instance_get(target, "withinRadius")) {
-			var tempx = x
-			var tempy = y
-			x = target.x
-			y = target.y-10
-			target.x = tempx
-			target.y = tempy-10
-			target.withinRadius = false
-			canRadius = false
+			if(!place_meeting(target.x, target.y-12, o_block)) { // check bad swap / upper collision
+				var tempx = x
+				var tempy = y
+				x = target.x
+				y = target.y-10
+				target.x = tempx
+				target.y = tempy-10
+				target.withinRadius = false
+				canRadius = false
+			} else {
+				canRadius = false
+				if(alarm[0] < 0) alarm[0] = badSwapCD // lenient cd for bad swap
+			}
 		}
 	}
 } else {
