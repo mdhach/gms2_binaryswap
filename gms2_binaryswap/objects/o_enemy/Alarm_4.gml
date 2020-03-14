@@ -1,2 +1,2 @@
 /// @description moveCD
-canMove = true
+state = enemy.move

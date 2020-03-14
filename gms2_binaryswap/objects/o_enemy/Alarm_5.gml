@@ -1,3 +1,2 @@
 /// @description moveDuration
-canMove = false
-hspd = 0
+state = enemy.idle

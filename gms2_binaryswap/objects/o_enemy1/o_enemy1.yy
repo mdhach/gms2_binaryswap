@@ -5,7 +5,17 @@
     "name": "o_enemy1",
     "eventList": [
         {
-            "id": "2ff0462a-7f1a-402d-8d4e-b57950475b9e",
+            "id": "7b5f3770-2dc0-41e9-83bc-e569d0b2a157",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 12,
+            "eventtype": 7,
+            "m_owner": "9b2fd2ce-790e-4880-9895-7a39f64427ad"
+        },
+        {
+            "id": "fe4302c3-b161-4306-b7de-34b989947b0a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
