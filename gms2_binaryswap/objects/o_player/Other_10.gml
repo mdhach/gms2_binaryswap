@@ -3,6 +3,7 @@
 key_left = keyboard_check(ord("A"))
 key_right = keyboard_check(ord("D"))
 key_jump = keyboard_check_pressed(vk_space)
+key_use = keyboard_check_pressed(ord("E"))
 mouse_left = mouse_check_button_pressed(mb_left)
 mouse_right = mouse_check_button(mb_right)
 
@@ -55,7 +56,7 @@ if(mouse_right && canRadius) {
 		// check of target has the 'withinRadius' variable set to true
 		if(variable_instance_get(target, "withinRadius") && variable_instance_get(target, "canSwap")) {
 			// check bad swap / upper collision
-			if(!place_meeting(target.x, target.y-target.sprite_height, all)
+			if(!instance_place(target.x, target.y-target.sprite_height, all)
 			&& !place_meeting(x, y-sprite_height, all)) {
 				var tempx = x
 				var tempy = y

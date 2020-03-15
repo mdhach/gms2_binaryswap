@@ -1,3 +1,4 @@
 event_inherited()
-maxRadius = 50
-image_blend = make_colour_hsv(255, 0, 50)
+maxRadius = 100
+count = 0
+image_blend = make_colour_hsv(120, 60, 105)
