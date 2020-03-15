@@ -5,7 +5,7 @@ else if(sprite_index == s_enemy_m_l) sprite_index = s_enemy_a_l
 selfHurt = false
 
 if(canFire) {
-	instance_create_layer(x, y, "Projectiles", o_projectile)
+	instance_create_layer(x, y, "Projectiles", o_slow_bullet)
 	canFire = false
 }
 if(alarm[0] < 0) alarm[0] = fireCD
