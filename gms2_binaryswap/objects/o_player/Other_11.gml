@@ -3,7 +3,7 @@ if(alarm[2] < 0) {
 	canBeHurt = false
 	canFlash = true
 	if(vspd >= 0)
-		vspd -= 20
+		vspd -= 25
 	alarm[2] = iFrames
 }
 

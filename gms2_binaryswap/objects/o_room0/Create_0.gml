@@ -34,3 +34,10 @@ e4_block2_target_y = 584
 e5_inst_trigger = inst_4C106DD7
 spawned = false
 #endregion
+
+#region Event 6 Variables
+e6_trigger_inst = inst_1C457D1 // current trigger
+e6_block_inst = inst_6C87A1D3 // current block
+e6_block_inst_y = e6_block_inst.y // original value
+e6_target_y = e6_block_inst_y - 200 // target value
+#endregion

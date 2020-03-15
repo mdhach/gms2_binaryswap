@@ -74,15 +74,7 @@
             "Key": "071cc792-d2b1-4a2f-8a84-048f96e00d12",
             "Value": {
                 "id": "25351349-ada3-4204-bce3-9cc4680c39db",
-                "resourcePath": "sprites\\s_sml_restore\\s_sml_restore.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "081d9f11-1874-4479-8ccb-dd4e2d1b0de8",
-            "Value": {
-                "id": "674b8750-ff3f-4a5f-96bf-513a474666f8",
-                "resourcePath": "sprites\\s_max_restore\\s_max_restore.yy",
+                "resourcePath": "sprites\\s_item\\s_item.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -92,14 +84,6 @@
                 "id": "dbd98393-52d0-467a-bada-cdaadc209548",
                 "resourcePath": "views\\09aef47b-fa22-4736-a592-787b4dd6915f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "09b040fd-24e2-4f0e-979a-692a3b67f1d9",
-            "Value": {
-                "id": "3c431465-2fb5-4719-87d4-61476e04226b",
-                "resourcePath": "sprites\\s_med_restore\\s_med_restore.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -279,14 +263,6 @@
             }
         },
         {
-            "Key": "61e38a99-3d91-4ab5-a70f-a773947400a2",
-            "Value": {
-                "id": "98790eb0-3f0b-4577-ada1-a3c641956715",
-                "resourcePath": "sprites\\s_lrg_restore\\s_lrg_restore.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "63ca55ab-d480-4412-98a2-f9dea809d91c",
             "Value": {
                 "id": "0b6a304b-8ef0-40f1-8223-93c90f142b7a",
@@ -300,6 +276,14 @@
                 "id": "223d34ca-9b82-49f0-9223-abc68bd26084",
                 "resourcePath": "views\\689d1cc3-3b07-433f-87cb-0c6736b8008a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6e287420-5a7d-44d9-aa81-d473a3a20c5c",
+            "Value": {
+                "id": "9e4ac9c3-0b29-42cc-88cb-00838ebf368f",
+                "resourcePath": "objects\\o_super_radius\\o_super_radius.yy",
+                "resourceType": "GMObject"
             }
         },
         {

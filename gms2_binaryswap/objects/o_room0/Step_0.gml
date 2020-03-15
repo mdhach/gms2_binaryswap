@@ -42,3 +42,11 @@ if(e5_inst_trigger.activated && !spawned) {
 	spawned = true
 }
 #endregion
+
+#region room0_Event 6: Move Block
+if(e6_trigger_inst.activated) {
+	if(e6_block_inst.y > e6_target_y) e6_block_inst.y -= 10
+} else {
+	if(e6_block_inst.y < e6_block_inst_y) e6_block_inst.y += 10
+}
+#endregion
