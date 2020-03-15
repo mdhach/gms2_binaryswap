@@ -1,2 +1,0 @@
-/// @description duration
-inEffect = false

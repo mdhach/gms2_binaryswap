@@ -19,6 +19,7 @@ canFlash = false // flash boolean
 maxHp = 30 // maximum health points
 hp = maxHp // current health points
 iFrames = 15 // iframes
+canBeHurt = true // make invul for iframes
 
 // states
 enum player {

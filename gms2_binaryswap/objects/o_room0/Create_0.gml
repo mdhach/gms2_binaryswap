@@ -29,3 +29,8 @@ e4_block2_inst = inst_5D8D88EC
 e4_block2_target_yscale = 3.75
 e4_block2_target_y = 584
 #endregion
+
+#region Event 5 Variables
+e5_inst_trigger = inst_4C106DD7
+spawned = false
+#endregion

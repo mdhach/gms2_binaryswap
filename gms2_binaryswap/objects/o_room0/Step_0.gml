@@ -35,3 +35,10 @@ if(e4_trigger_inst.activated) {
 		e4_block2_inst.y += 5
 }
 #endregion
+
+#region room0_Event 5: Trigger Block Spawn
+if(e5_inst_trigger.activated && !spawned) {
+	instance_create_layer(1632, 1120, "Instances", o_object_stable)
+	spawned = true
+}
+#endregion
