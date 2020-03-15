@@ -20,15 +20,6 @@ if(hp <= 0) instance_destroy()
 hspd *= global.time
 vspd *= global.time
 
-// clamp to prevent super speed
-hspd = clamp(hspd, -50, 50)
-if(!mouse_right) {
-	vspd = clamp(vspd, -20, 30)
-}
-else if(mouse_right) {
-	vspd = clamp(vspd, -50, 30)
-}
-
 // apply hspd and vspd to x and y
 x += hspd
 y += vspd

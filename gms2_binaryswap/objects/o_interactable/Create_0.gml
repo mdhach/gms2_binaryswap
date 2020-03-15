@@ -7,7 +7,8 @@ reuseCount = 0 // times object can be used
 enum interactable {
 	none,
 	lever,
-	pressure
+	pressure,
+	platform
 }
 
 startingState = interactable.none
