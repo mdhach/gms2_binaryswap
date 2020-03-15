@@ -1,3 +1,3 @@
 event_inherited()
-if(!activated) sprite_index = s_pressure_u
-else sprite_index = s_pressure_d
+if(place_meeting(x, y-12, all)) sprite_index = s_pressure_d
+else sprite_index = s_pressure_u
