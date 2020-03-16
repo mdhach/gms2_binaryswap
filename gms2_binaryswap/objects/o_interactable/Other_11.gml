@@ -6,6 +6,5 @@ if(collision_circle(x, y, 25, o_player, false, true) && !activated) {
 			other.activated = true
 			if(other.alarm[0] < 0) other.alarm[0] = other.reuseTime
 		}
-	}
-		
+	}	
 }
