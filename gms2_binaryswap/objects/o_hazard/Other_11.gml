@@ -1,4 +1,4 @@
-/// @description Ground State
+/// @description Conveyor State
 if(place_meeting(x, y-6, o_player)) {
 	with(o_player) {
 		if(canBeHurt) {
@@ -17,8 +17,11 @@ if(instance_place(x, y-6, o_object)) {
 		with(inst) {
 			if(!place_meeting(x+1, y, o_object) && !place_meeting(x+1, y, o_block)) {
 				show_debug_message(other.image_speed)
-				if(other.image_speed == 1) x += 0.1
-				else x -= 0.1
+				if(other.image_speed > 0) x += other.groundspd
+				else {
+					if(other.image_speed < 0)
+						x -= other.groundspd
+				}
 			}
 		}
 	}

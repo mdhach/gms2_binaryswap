@@ -1,4 +1,4 @@
 event_inherited()
-state = hazard.ground
+state = hazard.conveyor
 damage = 5
-image_speed = -1
+groundspd = 0.1

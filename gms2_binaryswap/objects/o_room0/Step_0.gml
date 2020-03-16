@@ -1,17 +1,9 @@
 #region room0_Event 1: Move block
-if(e1_trigger_inst.activated) {
-	if(e1_block_inst.y > e1_target_y) e1_block_inst.y -= 10
-} else {
-	if(e1_block_inst.y < e1_block_inst_y) e1_block_inst.y += 10
-}
+room_trigger_move(e1_trigger, e1_object, e1_object_y, 200, 10)
 #endregion
 
 #region room0_Event 2: Move block
-if(e2_trigger_inst.activated) {
-	if(e2_block_inst.y > e2_target_y) e2_block_inst.y -= 10
-} else {
-	if(e2_block_inst.y < e2_block_inst_y) e2_block_inst.y += 10
-}
+room_trigger_move(e2_trigger, e2_object, e2_object_y, 200, 10)
 #endregion
 
 #region room0_Event 3: Backtrack
@@ -44,25 +36,17 @@ if(e5_inst_trigger.activated && !spawned) {
 #endregion
 
 #region room0_Event 6: Move Block
-if(e6_trigger_inst.activated) {
-	if(e6_block_inst.y > e6_target_y) e6_block_inst.y -= 10
-} else {
-	if(e6_block_inst.y < e6_block_inst_y) e6_block_inst.y += 10
-}
+room_trigger_move(e6_trigger, e6_object, e6_object_y, 200, 10)
 #endregion
 
 #region room0_Event 7: Move Block
-if(e7_trigger_inst.activated) {
-	if(e7_block_inst.y > e7_target_y) e7_block_inst.y -= 10
-} else {
-	if(e7_block_inst.y < e7_block_inst_y) e7_block_inst.y += 10
-}
+room_trigger_move(e7_trigger, e7_object, e7_object_y, 200, 10)
 #endregion
 
-#region room0_Event 8: Move Block
-if(e8_trigger_inst.activated) {
-	if(e8_block_inst.y > e8_target_y) e8_block_inst.y -= 10
-} else {
-	if(e8_block_inst.y < e8_block_inst_y) e8_block_inst.y += 10
-}
+#region room0_Event 8: Activate Conveyor
+room_activate_conveyor(e8_trigger_inst, e8_hazard_array, true, 5, 0.5)
+#endregion
+
+#region room0_Event 9: Move Block
+room_trigger_move(e9_trigger, e9_object, e9_object_y, 200, 10)
 #endregion

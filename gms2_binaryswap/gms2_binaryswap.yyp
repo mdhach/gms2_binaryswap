@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "2c741452-db24-4f74-917c-6d45a294d3eb",
+            "Value": {
+                "id": "d48010c0-12ec-4cb7-9f88-8baebadeb9e8",
+                "resourcePath": "scripts\\room_trigger_move\\room_trigger_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35114369-4159-46e5-8e1d-9268e13f6cc0",
             "Value": {
                 "id": "97dcd7c1-3349-4cb7-bf5a-08f65c9854aa",
@@ -236,6 +244,14 @@
                 "id": "bc8d91dc-6dce-4196-9b8d-2885f19c4e84",
                 "resourcePath": "views\\46362802-1fd1-4f71-972b-d253c42fe7e6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "464f29bc-e7fa-49be-847e-4c1e9f24a5da",
+            "Value": {
+                "id": "7e4ae456-d16b-4077-b6ae-6aae6ce900db",
+                "resourcePath": "scripts\\room_activate_conveyor\\room_activate_conveyor.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -771,7 +787,9 @@
         "6f5d7e94-bd73-4a96-9b27-da9e01388939",
         "3a4be4e5-ef3b-4667-9c0e-aec07a0dc2c6",
         "cd030b9c-0b11-4a8f-b9da-353e4b7238e8",
-        "87f065cc-e987-47aa-b8dc-5c11d1ce65c7"
+        "87f065cc-e987-47aa-b8dc-5c11d1ce65c7",
+        "2c741452-db24-4f74-917c-6d45a294d3eb",
+        "464f29bc-e7fa-49be-847e-4c1e9f24a5da"
     ],
     "tutorial": ""
 }

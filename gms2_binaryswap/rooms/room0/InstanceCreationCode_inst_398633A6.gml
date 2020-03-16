@@ -1,1 +1,0 @@
-playerOnly = true

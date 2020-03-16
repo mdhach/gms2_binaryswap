@@ -16,7 +16,6 @@ if(hp > maxHp) hp = maxHp
 
 if(hp <= 0) instance_destroy()
 
-// apply global time to speeds
 hspd *= global.time
 vspd *= global.time
 

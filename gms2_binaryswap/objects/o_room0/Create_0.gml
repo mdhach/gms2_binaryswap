@@ -1,22 +1,20 @@
-#region Event 1 Variables
-e1_trigger_inst = inst_31787CFA // current trigger
-e1_block_inst = inst_5E65E7F9 // current block
-e1_block_inst_y = e1_block_inst.y // original value
-e1_target_y = e1_block_inst_y - 200 // target value
+#region room0_Event 1: Move block
+e1_trigger = inst_31787CFA
+e1_object = inst_5E65E7F9
+e1_object_y = e1_object.y
 #endregion
 
-#region Event 2 Variables
-e2_trigger_inst = inst_398633A6 // current trigger
-e2_block_inst = inst_5B4A10EF // current block
-e2_block_inst_y = e2_block_inst.y // original value
-e2_target_y = e2_block_inst_y - 200 // target value
+#region room0_Event 2: Move block
+e2_trigger = inst_398633A6
+e2_object = inst_5B4A10EF
+e2_object_y = e2_object.y
 #endregion
 
-#region Event 3 Variables
+#region room0_Event 3: Backtrack
 e3_trigger_inst = inst_5C952D1F
 #endregion
 
-#region Event 4 Variables
+#region room0_Event 4: Open Level
 e4_trigger_inst = inst_6D6A28F6
 
 // block 1
@@ -30,28 +28,34 @@ e4_block2_target_yscale = 3.75
 e4_block2_target_y = 584
 #endregion
 
-#region Event 5 Variables
+#region room0_Event 5: Trigger Block Spawn
 e5_inst_trigger = inst_4C106DD7
 spawned = false
 #endregion
 
-#region Event 6 Variables
-e6_trigger_inst = inst_1C457D1 // current trigger
-e6_block_inst = inst_6C87A1D3 // current block
-e6_block_inst_y = e6_block_inst.y // original value
-e6_target_y = e6_block_inst_y - 200 // target value
+#region room0_Event 6: Move Block
+e6_trigger = inst_1C457D1
+e6_object = inst_6C87A1D3
+e6_object_y = e6_object.y
 #endregion
 
-#region Event 7 Variables
-e7_trigger_inst = inst_2560CE29 // current trigger
-e7_block_inst = inst_CEAA50A // current block
-e7_block_inst_y = e7_block_inst.y // original value
-e7_target_y = e7_block_inst_y - 200 // target value
+#region room0_Event 7: Move Block
+e7_trigger = inst_2560CE29
+e7_object = inst_CEAA50A
+e7_object_y = e7_object.y
 #endregion
 
-#region Event 8 Variables
-e8_trigger_inst = inst_37C01588 // current trigger
-e8_block_inst = inst_240CABA8 // current block
-e8_block_inst_y = e8_block_inst.y // original value
-e8_target_y = e8_block_inst_y - 200 // target value
+#region room0_Event 8: Activate Conveyor
+e8_trigger_inst = inst_328FE56D
+e8_hazard_array[0] = inst_59F0C996
+e8_hazard_array[1] = inst_75706020
+e8_hazard_array[2] = inst_26DB0D52
+e8_hazard_array[3] = inst_6C6A84CD
+e8_hazard_array[4] = inst_2246F648
+#endregion
+
+#region room0_Event 9: Move Block
+e9_trigger = inst_35EC0A5C
+e9_object = inst_29E94D4E
+e9_object_y = e9_object.y
 #endregion
