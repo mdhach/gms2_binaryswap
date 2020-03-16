@@ -7,10 +7,15 @@ if(place_meeting(x, y-6, o_player)) {
 		}
 	}
 }
+
 if(instance_place(x, y-6, o_object)) {
 	var inst = instance_place(x, y-6, o_object)
-	if(inst.destructible)
+	if(inst.destructible) {
 		instance_destroy(inst)
-	else if(!instance_place(inst.x+6, y, o_block) || !instance_place(inst.x+6, y, o_object)) 
-		inst.x += 0.1
+	}
+	else {
+		with(inst) {
+			if(!place_meeting(x+1, y, o_object) && !place_meeting(x+1, y, o_block)) x += 0.1
+		}
+	}
 }
