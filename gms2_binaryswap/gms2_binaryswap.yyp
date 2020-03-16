@@ -298,7 +298,7 @@
             "Key": "6e287420-5a7d-44d9-aa81-d473a3a20c5c",
             "Value": {
                 "id": "9e4ac9c3-0b29-42cc-88cb-00838ebf368f",
-                "resourcePath": "objects\\o_super_radius\\o_super_radius.yy",
+                "resourcePath": "objects\\o_radius_up\\o_radius_up.yy",
                 "resourceType": "GMObject"
             }
         },

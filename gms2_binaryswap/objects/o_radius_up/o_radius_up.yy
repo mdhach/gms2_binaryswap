@@ -2,7 +2,7 @@
     "id": "6e287420-5a7d-44d9-aa81-d473a3a20c5c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_super_radius",
+    "name": "o_radius_up",
     "eventList": [
         {
             "id": "3701f181-0cd0-4c95-829e-8600d01c3426",

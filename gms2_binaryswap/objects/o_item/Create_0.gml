@@ -6,7 +6,7 @@ restoreRate = 0
 radiusCD = 0
 itemDuration = 0
 vspd = 0
-vcount = 0
+vcount = 0 // control vspd oscillation
 
 enum osc {
 	none,
