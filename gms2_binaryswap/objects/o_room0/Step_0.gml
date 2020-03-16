@@ -50,3 +50,19 @@ if(e6_trigger_inst.activated) {
 	if(e6_block_inst.y < e6_block_inst_y) e6_block_inst.y += 10
 }
 #endregion
+
+#region room0_Event 7: Move Block
+if(e7_trigger_inst.activated) {
+	if(e7_block_inst.y > e7_target_y) e7_block_inst.y -= 10
+} else {
+	if(e7_block_inst.y < e7_block_inst_y) e7_block_inst.y += 10
+}
+#endregion
+
+#region room0_Event 8: Move Block
+if(e8_trigger_inst.activated) {
+	if(e8_block_inst.y > e8_target_y) e8_block_inst.y -= 10
+} else {
+	if(e8_block_inst.y < e8_block_inst_y) e8_block_inst.y += 10
+}
+#endregion

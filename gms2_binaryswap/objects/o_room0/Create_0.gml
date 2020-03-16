@@ -41,3 +41,17 @@ e6_block_inst = inst_6C87A1D3 // current block
 e6_block_inst_y = e6_block_inst.y // original value
 e6_target_y = e6_block_inst_y - 200 // target value
 #endregion
+
+#region Event 7 Variables
+e7_trigger_inst = inst_2560CE29 // current trigger
+e7_block_inst = inst_CEAA50A // current block
+e7_block_inst_y = e7_block_inst.y // original value
+e7_target_y = e7_block_inst_y - 200 // target value
+#endregion
+
+#region Event 8 Variables
+e8_trigger_inst = inst_37C01588 // current trigger
+e8_block_inst = inst_240CABA8 // current block
+e8_block_inst_y = e8_block_inst.y // original value
+e8_target_y = e8_block_inst_y - 200 // target value
+#endregion
