@@ -1,2 +1,2 @@
-/// @description canFire
-canFire = true
+/// @description canAttack
+canAttack = true

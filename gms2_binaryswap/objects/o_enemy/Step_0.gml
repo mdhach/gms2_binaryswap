@@ -6,7 +6,7 @@ block_collision(o_interactable)
 block_collision(o_object)
 block_collision(o_block)
 
-if(collision_circle(x, y, aggroDist, o_player, false, true) && canFire) state = enemy.attack
+if(collision_circle(x, y, aggroDist, o_player, false, true) && canAttack) state = enemy.attack
 
 hspd *= global.time
 vspd *= global.time

@@ -2,7 +2,7 @@
     "id": "9b2fd2ce-790e-4880-9895-7a39f64427ad",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_enemy1",
+    "name": "o_enemy_shooter",
     "eventList": [
         {
             "id": "7b5f3770-2dc0-41e9-83bc-e569d0b2a157",
@@ -53,6 +53,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "b3fd4760-d362-4f22-a9cc-aacd254de8fd",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

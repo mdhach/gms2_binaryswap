@@ -11,7 +11,7 @@
 
 var trigger = argument0
 var args = argument1 // array of conveyor objects
-var dir = argument2 // direction + if true, - if false
+var dir = argument2 // direction right if true, left if false
 var xspeed = argument3 // image_speed of args objects
 var gspeed = argument4 // refers to groundspd in o_hazard
 
