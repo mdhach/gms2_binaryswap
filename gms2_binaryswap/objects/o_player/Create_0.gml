@@ -21,6 +21,14 @@ hp = maxHp // current health points
 iFrames = 15 // iframes
 canBeHurt = true // make invul for iframes
 
+// Values Used For shd_blend
+ucolor = shader_get_uniform(shd_blend, "in_color")
+uRed = shader_get_uniform(shd_blend, "v_red");
+uGreen = shader_get_uniform(shd_blend, "v_green");
+vRed = 0.0
+vGreen = 255.0
+color_increment = 5.0
+
 // states
 enum player {
 	move,
