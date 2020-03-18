@@ -1,4 +1,4 @@
-///@description attack state
+/// @description attack state
 if(sprite_index == move_sprite_r) sprite_index = atk_sprite_r
 else if(sprite_index == move_sprite_l) sprite_index = atk_sprite_l
 
@@ -8,6 +8,7 @@ if(canAttack) {
 	instance_create_layer(x, y, "Projectiles", o_slow_bullet)
 	canAttack = false
 }
+
 if(alarm[0] < 0) alarm[0] = attackCD
 if(alarm[3] < 0) alarm[3] = safeFrames
 if(alarm[4] < 0) alarm[4] = attackDuration

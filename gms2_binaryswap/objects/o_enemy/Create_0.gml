@@ -1,7 +1,7 @@
 event_inherited()
 hspd = 0
 vspd = 0
-walkspd = 6
+walkspd = 3
 grav = 4
 hp = 10
 canAttack = true // check if enemy can attack
@@ -15,6 +15,13 @@ attackDuration = 10 // time attack state lasts
 moveCD = 120 // time until enemy can move
 moveDuration = 30 // duration of movement
 ff = true // friendly fire & self fire
+inRange = collision_circle(x, y, aggroDist, o_player, false, true) // checks if player is nearby
+
+// modular sprites
+move_sprite_r = noone
+move_sprite_l = noone
+atk_sprite_r = noone
+atk_sprite_l = noone
 
 // states
 enum enemy {

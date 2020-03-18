@@ -1,28 +1,28 @@
 {
-    "id": "9b2fd2ce-790e-4880-9895-7a39f64427ad",
+    "id": "4ce50418-93c7-426e-8a39-bbbc467151ff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_enemy_shooter",
+    "name": "o_enemy_defender",
     "eventList": [
         {
-            "id": "7b5f3770-2dc0-41e9-83bc-e569d0b2a157",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 12,
-            "eventtype": 7,
-            "m_owner": "9b2fd2ce-790e-4880-9895-7a39f64427ad"
-        },
-        {
-            "id": "fe4302c3-b161-4306-b7de-34b989947b0a",
+            "id": "3ff8edcd-69ee-4d18-8d37-1719decc22d1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 11,
             "eventtype": 7,
-            "m_owner": "9b2fd2ce-790e-4880-9895-7a39f64427ad"
+            "m_owner": "4ce50418-93c7-426e-8a39-bbbc467151ff"
+        },
+        {
+            "id": "d07b3f54-0847-4dc7-ae5b-f1e589ddfc66",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 12,
+            "eventtype": 7,
+            "m_owner": "4ce50418-93c7-426e-8a39-bbbc467151ff"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
