@@ -1,2 +1,1 @@
 /// @description canAttack
-canAttack = true

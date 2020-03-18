@@ -1,12 +1,12 @@
 event_user(state)
 
+inRange = collision_circle(x, y, aggroDist, o_player, false, true) // checks if player is nearby
+
 vspd += grav
 
 block_collision(o_interactable)
 block_collision(o_object)
 block_collision(o_block)
-
-if(inRange && canAttack) state = enemy.attack
 
 hspd *= global.time
 vspd *= global.time

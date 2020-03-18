@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "338715d6-e543-438e-90a3-21ee2d7e7b54",
+            "Value": {
+                "id": "41216034-ee3b-443c-9366-d29dc8be49a9",
+                "resourcePath": "sprites\\s_platform\\s_platform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35114369-4159-46e5-8e1d-9268e13f6cc0",
             "Value": {
                 "id": "97dcd7c1-3349-4cb7-bf5a-08f65c9854aa",
@@ -299,6 +307,14 @@
             "Value": {
                 "id": "60114559-54a0-42c4-9f64-b33088348c54",
                 "resourcePath": "objects\\o_enemy_defender\\o_enemy_defender.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d8e3887-11f8-44dc-92d8-54f5ceae20d3",
+            "Value": {
+                "id": "2d032fa5-79e8-4754-86f7-4599aecb0220",
+                "resourcePath": "objects\\o_platform\\o_platform.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -778,7 +794,7 @@
             "Key": "e62fc30a-b944-4418-9761-e16ff70dc2a7",
             "Value": {
                 "id": "c54a2a7a-472e-4ee2-8f37-b300224cf1c4",
-                "resourcePath": "objects\\o_platform\\o_platform.yy",
+                "resourcePath": "objects\\o_bouncer\\o_bouncer.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -804,6 +820,14 @@
                 "id": "3b2019bf-2e99-4619-8a11-c3b43d1bb12d",
                 "resourcePath": "objects\\o_room0\\o_room0.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f1f00f2c-15a7-445c-ac84-ab0b8e2de9af",
+            "Value": {
+                "id": "675140e6-11a2-47fd-bebe-000ebee4aa8d",
+                "resourcePath": "scripts\\platform_collision\\platform_collision.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -833,6 +857,7 @@
     ],
     "script_order": [
         "6f5d7e94-bd73-4a96-9b27-da9e01388939",
+        "f1f00f2c-15a7-445c-ac84-ab0b8e2de9af",
         "3a4be4e5-ef3b-4667-9c0e-aec07a0dc2c6",
         "cd030b9c-0b11-4a8f-b9da-353e4b7238e8",
         "87f065cc-e987-47aa-b8dc-5c11d1ce65c7",

@@ -8,7 +8,7 @@ enum interactable {
 	none,
 	lever,
 	pressure,
-	platform
+	bouncer
 }
 
 startingState = interactable.none
