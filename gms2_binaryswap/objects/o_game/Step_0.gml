@@ -16,5 +16,10 @@ if(key_health) {
 	}
 }
 
-if(!instance_exists(o_player))
-	if(alarm[0] < 0) alarm[0] = room_speed
+if(!instance_exists(o_player)) {
+	if(global.checkpointR != 0) {
+		room_goto(global.checkpointR)
+	} else {
+		room_restart()
+	}
+}

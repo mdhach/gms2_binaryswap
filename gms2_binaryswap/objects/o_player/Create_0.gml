@@ -21,6 +21,11 @@ hp = maxHp // current health points
 iFrames = 15 // iframes
 canBeHurt = true // make invul for iframes
 
+if(global.checkpointR == room) {
+	x = global.checkpointX
+	y = global.checkpointY
+}
+
 // Values Used For shd_blend
 uRed = shader_get_uniform(shd_blend, "v_red");
 uGreen = shader_get_uniform(shd_blend, "v_green");
