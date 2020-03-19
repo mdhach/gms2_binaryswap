@@ -1,3 +1,5 @@
+draw_self()
+
 // values for Red/Green
 var posPercent = swapRadius/maxRadius;
 var negPercent = 1 - (swapRadius/maxRadius);
@@ -24,9 +26,12 @@ if(canFlash) {
 	alarm[1] = 0.1 * room_speed
 }
 
-shader_set(shd_blend)
-shader_set_uniform_f(uRed,negPercent)
-shader_set_uniform_f(uGreen, posPercent)
-shader_set_uniform_f(uBlue, 0.0)
-draw_self()
-shader_reset()
+// draw radius indicator
+if(alarm[1] < 0) {
+	shader_set(shd_blend)
+	shader_set_uniform_f(uRed,negPercent)
+	shader_set_uniform_f(uGreen, posPercent)
+	shader_set_uniform_f(uBlue, 0.0)
+	draw_self()
+	shader_reset()
+}

@@ -12,4 +12,3 @@ if(alarm[0] < 0) {
 	if(alarm[3] < 0) alarm[3] = safeFrames
 	//if(alarm[4] < 0) alarm[4] = attackDuration
 }
-
