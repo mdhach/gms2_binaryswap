@@ -5,7 +5,7 @@
     "name": "o_plat1",
     "eventList": [
         {
-            "id": "694c7864-a5ed-498b-8bf6-964f6d45ddb4",
+            "id": "78f1ee3e-908c-4ab8-8ff1-024b8cb05ca5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

@@ -10,7 +10,7 @@ block_collision(o_block)
 with(o_object) {
 	object_collision(other, id)
 }
-platform_collision(o_platform)
+block_collision(o_platform)
 block_collision(o_interactable)
 
 if(hp > maxHp) hp = maxHp

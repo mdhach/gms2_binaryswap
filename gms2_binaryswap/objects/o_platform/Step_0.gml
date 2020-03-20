@@ -1,8 +1,9 @@
-event_inherited()
+block_collision(o_enemy)
+block_collision(o_object)
 
 if(x <= x_left) 
 	hspd = x_spd
-else if(x >= x_right) 
+else if(x >= x_right)
 	hspd = -x_spd
 
 if(y >= y_lower) 
@@ -10,4 +11,5 @@ if(y >= y_lower)
 else if(y <= y_upper) 
 	vspd = y_spd
 	
-show_debug_message(x_left)
+x += hspd
+y += vspd
