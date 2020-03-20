@@ -1,0 +1,2 @@
+canSwap = false
+projectileSwap = false

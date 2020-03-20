@@ -1,4 +1,5 @@
-image_angle += 3
+if(sprite_index == s_checkpoint_inactive) image_angle += 3
+else image_angle += 10
 
 if(place_meeting(x, y, o_player)) {
 	global.checkpoint = id
