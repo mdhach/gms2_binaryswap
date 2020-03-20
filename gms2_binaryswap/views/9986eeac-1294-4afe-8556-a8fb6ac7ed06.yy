@@ -6,7 +6,8 @@
     "children": [
         "abefe53a-7b9f-4da3-9e58-d0f9612b83cc",
         "ba69187e-2989-4d43-9882-7e1c1654ce90",
-        "c068f27f-0312-44a6-af15-b6615ef0d709"
+        "c068f27f-0312-44a6-af15-b6615ef0d709",
+        "338715d6-e543-438e-90a3-21ee2d7e7b54"
     ],
     "filterType": "GMSprite",
     "folderName": "Objects",
