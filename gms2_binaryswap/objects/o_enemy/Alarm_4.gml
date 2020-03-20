@@ -1,2 +1,4 @@
 /// @description moveCD
-state = enemy.move
+if(state != enemy.attack) {
+	state = enemy.move
+}

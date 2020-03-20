@@ -1,8 +1,8 @@
 event_user(state)
 
-inRange = collision_circle(x, y, aggroDist, o_player, false, true) // checks if player is nearby
-
 vspd += grav
+
+inRange = collision_circle(x, y, aggroDist, o_player, false, true) // checks if player is nearby
 
 block_collision(o_interactable)
 block_collision(o_object)

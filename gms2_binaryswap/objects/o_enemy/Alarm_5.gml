@@ -1,2 +1,4 @@
 /// @description moveDuration
-state = enemy.idle
+if(state != enemy.attack) {
+	state = enemy.idle
+}

@@ -2,7 +2,7 @@
     "id": "c1266bc8-c7f4-420b-ab1d-7cbece5fd8eb",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_enemy_m_l",
+    "name": "s_shooter_m_l",
     "For3D": false,
     "HTile": false,
     "VTile": false,
