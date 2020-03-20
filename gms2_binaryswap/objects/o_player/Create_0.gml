@@ -18,7 +18,7 @@ pushspd = 0.3 // speed for pushing objects
 canFlash = false // flash boolean
 maxHp = 30 // maximum health points
 hp = maxHp // current health points
-iFrames = 15 // iframes
+iFrames = 30 // iframes
 canBeHurt = true // make invul for iframes
 
 if(global.checkpointR == room) {

@@ -86,6 +86,8 @@ if(mouse_right && canRadius) {
 
 #region V CHECK
 // vertical collision check for jumping
-if(check_vcollision(self, o_block) || check_vcollision(self, o_object) || check_vcollision(self, o_interactable))
+if(check_vcollision(self, o_block) || check_vcollision(self, o_object) 
+	|| check_vcollision(self, o_interactable)
+	|| check_vcollision(self, o_platform))
 	jumpBuffer = maxJumpBuffer
 #endregion

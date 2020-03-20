@@ -1,5 +1,5 @@
 /// @description Conveyor State
-if(place_meeting(x, y-6, o_player)) {
+if(place_meeting(x, y-8, o_player)) {
 	with(o_player) {
 		if(canBeHurt) {
 			state = player.hurt
@@ -8,7 +8,17 @@ if(place_meeting(x, y-6, o_player)) {
 	}
 }
 
-if(instance_place(x, y-6, o_object)) {
+if(instance_place(x, y, o_enemy)) {
+	var inst = instance_place(x, y, o_enemy)
+	with(inst) {
+		if(canBeHurt) {
+			state = enemy.hurt
+			hp -= other.damage
+		}
+	}
+}
+
+if(instance_place(x, y, o_object)) {
 	var inst = instance_place(x, y-6, o_object)
 	if(inst.destructible) {
 		instance_destroy(inst)

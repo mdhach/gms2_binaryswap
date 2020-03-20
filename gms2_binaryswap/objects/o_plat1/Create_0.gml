@@ -1,6 +1,6 @@
 event_inherited()
 x_spd = 1
-dis_left = 5
+dis_left = 10
 
 // direction
 x_left = x - (sprite_width * dis_left)

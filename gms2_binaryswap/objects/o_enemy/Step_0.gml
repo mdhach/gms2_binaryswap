@@ -8,6 +8,7 @@ block_collision(o_interactable)
 block_collision(o_object)
 block_collision(o_block)
 block_collision(o_enemy_block)
+block_collision(o_platform)
 
 hspd *= global.time
 vspd *= global.time

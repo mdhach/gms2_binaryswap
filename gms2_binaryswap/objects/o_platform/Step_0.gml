@@ -1,6 +1,3 @@
-block_collision(o_enemy)
-block_collision(o_object)
-
 if(x <= x_left) 
 	hspd = x_spd
 else if(x >= x_right)
