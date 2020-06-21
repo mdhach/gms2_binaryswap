@@ -4,8 +4,9 @@
 ///@arg trigger
 ///@arg object
 ///@arg object_y
-///@arg amount
+///@arg distance
 ///@arg yspeed
+
 
 
 var trigger = argument0

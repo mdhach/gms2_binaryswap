@@ -47,11 +47,9 @@ e7_object_y = e7_object.y
 
 #region rm_0_Event 8: Activate Conveyor
 e8_trigger_inst = inst_328FE56D
-e8_hazard_array[0] = inst_59F0C996
-e8_hazard_array[1] = inst_75706020
-e8_hazard_array[2] = inst_26DB0D52
-e8_hazard_array[3] = inst_6C6A84CD
-e8_hazard_array[4] = inst_2246F648
+
+e8_hazard_array = create_instance_array(inst_59F0C996, inst_75706020, 
+					inst_26DB0D52, inst_6C6A84CD, inst_2246F648)
 #endregion
 
 #region rm_0_Event 9: Move Block
