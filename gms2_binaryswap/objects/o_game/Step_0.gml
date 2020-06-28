@@ -23,3 +23,7 @@ if(!instance_exists(o_player)) {
 		room_restart()
 	}
 }
+
+if(instance_exists(inst_4637AB08)) {
+	
+}

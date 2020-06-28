@@ -60,12 +60,23 @@ if(mouse_right && canRadius) {
 			&& !place_meeting(x, y-sprite_height, all)) {
 				var tempx = x
 				var tempy = y
+				show_debug_message("BEFORE SWAP")
+				show_debug_message("o_player.x: " + string(x))
+				show_debug_message("o_player.y: " + string(y))
+				show_debug_message("target.x: " + string(target.x))
+				show_debug_message("target.y: " + string(target.y))
 				x = target.x
 				y = target.y-10
 				target.x = tempx
 				target.y = tempy-10
 				target.withinRadius = false
 				canRadius = false
+				show_debug_message("------------------------------")
+				show_debug_message("AFTER SWAP")
+				show_debug_message("o_player.x: " + string(x))
+				show_debug_message("o_player.y: " + string(y))
+				show_debug_message("target.x: " + string(target.x))
+				show_debug_message("target.y: " + string(target.y))
 			} else {
 				// cd if bad swap
 				canRadius = false
